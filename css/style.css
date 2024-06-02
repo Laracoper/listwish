@@ -1,0 +1,54 @@
+@import url(list.css);
+@import url(vars.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 1.3;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: rgb(46, 46, 46);
+}
+
+.p-danger {
+    background-color: #ff8e8e;
+    padding: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    padding-left: 10px;
+    position: relative;
+    &::marker {
+        position: absolute;
+        left: -20px;
+        color: blue;
+        background-color: aquamarine;
+        display: inline-block;
+    }
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in;
+    &:hover {
+        background-color: rgb(45, 255, 185);
+    }
+}
